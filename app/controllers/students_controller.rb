@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
 
     @student.active= !@student.active
     @student.save
-    render '/student/#{@student.id}'
+    render :show
   end
 
   private
