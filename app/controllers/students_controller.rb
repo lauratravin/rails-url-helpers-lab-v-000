@@ -13,9 +13,9 @@ class StudentsController < ApplicationController
 
     @student.active= !@student.active
     @student.save
-    redirect_to student_path(@student)
+    # redirect_to student_path(@student)
 
-    # render :show
+    render :show
   end
 
   private
